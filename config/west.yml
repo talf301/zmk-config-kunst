@@ -1,10 +1,10 @@
 manifest:
   remotes:
-    - name: kunsteak
-      url-base: https://github.com/kunsteak
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
   projects:
     - name: zmk
-      remote: kunsteak
+      remote: zmkfirmware
       revision: main
       import: app/west.yml
   self:
