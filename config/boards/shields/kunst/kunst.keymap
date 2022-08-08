@@ -160,7 +160,7 @@
 		bindings = <
 		 	 	&kp V 		&kp W		&kp M	 	 	&kp F    	&kp SQT			&kp Z 		
 		&kp Q	 	&kp J 		&kp P		&kp K 			&kp B 		&kp DOT			&kp X		&kp Y 
-			 	 		 		&sk LSHIFT 		&none &none &sl AL2U	
+			 	 		 		&sk LSHIFT 		&to AL1 &none &sl AL2U	
 		>;
 		};
 		
