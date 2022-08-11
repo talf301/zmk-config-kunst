@@ -168,14 +168,14 @@
 		bindings = <
 		 		&kp LA(N3)   	&kp LS(N3)	&kp DLLR	    	&kp LS(COMMA)	&kp LS(DOT)		&kp CARET	
 		&kp GRAVE	&kp TILDE 	&kp UNDER      	&kp BSLH	 	&kp LBKT	&kp RBKT	 	&kp PIPE 	&kp SLASH
-				  				&trans  		&trans		&trans  	&trans
+				  				&trans  		&trans		&trans  	&kp RGUI
 		>;
 		};
 		sym2 {
 		bindings = <
 				&kp ATSN	&kp K_VOL_DN	&kp K_VOL_UP	&kp LPRN	&kp RPRN 	&kp SEMI 	
 		&kp STAR  	&kp PRCNT	&td QMARK EXCL       		&kp DQT   			&kp LBRC  	&kp RBRC	&kp AMPS	&kp COLON 
-		 		&trans 		&trans  			&trans 	&none &none &trans 		
+		 		          			&trans 	&none &none &kp RGUI 		
 
 		>;
 		};
@@ -184,7 +184,7 @@
 		bindings = <
 				&hm_l LCTL DOT 	&hm_l LALT N0	&hm_l LGUI N1 		&hm_r RGUI N2 	&hm_r RALT N3		&hm_r RCTL N4	
 		&kp MINUS	&kp PLUS 	&kp N5		&kp N6			&kp N7		&kp N8			&kp N9   	&kp EQUAL
-							&sr LSHIFT AL1 		&trans 		&trans 			&trans  	 
+							&sr LSHIFT AL1 		&trans 		&trans 			&kp RGUI  	 
 		>;
 		};
 
@@ -208,7 +208,7 @@
 		bindings = <
 		 	 	&kp LS(V)	&kp LS(W)	&kp LS(M) 	 	&kp LS(F)    	&kp DQT		&kp LS(Z)	
 		&kp LS(Q) 	&kp LS(J) 	&kp LS(P)	&kp LS(K)		&kp LS(B)	&kp COMMA	&kp LS(X)	&kp LS(Y) 
-			 	&trans 		&trans 			&trans	&none
+			 	        &to AL1 		&trans 			&trans	&none
 		>;
 		};
         
