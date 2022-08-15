@@ -29,6 +29,7 @@
 #define SYS 5
 #define BT 6	
 #define AL2U 7
+#define IMG 8
 / { 
     combos {
         compatible = "zmk,combos";
@@ -66,7 +67,11 @@
             bindings = <&mkp RCLK>;
 	    layers = <SYS>;
         };
-
+        combo_img {
+            timeout-ms = <30>;
+        key-positions = <0 1 2>;
+            bindings = <&to IMG>;
+        };
 
     };
 
@@ -184,19 +189,19 @@
 		bindings = <
 			        &td DOT COMMA     &hm_l LALT N0	&hm_l LGUI N1 		&hm_r RGUI N2 	&hm_r RALT N3		&hm_r RCTL N4	
 		&kp MINUS	&kp PLUS      	&kp N5		    &kp N6			      &kp N7		      &kp N8			    &kp N9   	&kp EQUAL
-							  &sr LSHIFT AL1    &trans      &kp RCTL    &kp RGUI  	 
+							  &kp LSHIFT    &trans      &kp RCTL    &kp RGUI  	 
 		>;
 		};
 
-		sys {
-		bindings = <
+	sys {
+	    bindings = <
 				 	&kp ESC			&kp LC(LS(TAB)) 	&kp RC(TAB)		&td LG(V) LG(C) 	&kp UP 		&td Q BKSP 			
 		&td LG(GRAVE) TAB	&td HOME DEL		&td END LG(LBKT) 	&kp LG(RBKT)		&td TAB LEFT  		&kp DOWN 	&td  LG(LS(N5)) RIGHT 	&kp RET 
                 &sr LSHIFT AL1    &kp LALT      &none   &kp RGUI	
 		>;
 		};
 
-		bt {
+	bt {
 		bindings = <
 				        &bt BT_PRV	&bt BT_NXT	&trans 			&trans 	&trans	&trans	
 		&bootloader &trans 		  &trans 		  &trans 			&trans 	&trans 	&trans	&bt BT_CLR
@@ -209,6 +214,14 @@
 		 	 	      &kp LS(V)	&kp LS(W)	&kp LS(M) 	 	&kp LS(F)	&kp DQT		&kp LS(Z)	
 		&kp LS(Q) &kp LS(J) &kp LS(P)	&kp LS(K)		  &kp LS(B)	&kp COMMA	&kp LS(X)	&kp LS(Y) 
 			 	        &none   &to AL1     &none   &none
+		>;
+		};
+
+    img {
+		bindings = <
+		 	 	    &kp LCTL    &kp LALT	&kp LGUI 	 	&none   &none   &none
+		&kp LSHIFT  &kp M   &kp H   &kp V   &kp LS(B)   	&none	&none   &none 
+			 	        &kp SPC   &to AL1     &none   &none
 		>;
 		};
         
