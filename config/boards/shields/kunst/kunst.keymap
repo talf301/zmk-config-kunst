@@ -227,6 +227,5 @@
 							&kp SPC		&to AL1						&none	&none
 			>;
 		};
-		
 	};
 };
