@@ -222,9 +222,9 @@
 
 		img {
 			bindings = <
-							&kp LCTL	&kp LALT	&kp LGUI		&none	&none	&kp BKSP
-				&kp LSHIFT  &td M I		&td P B		&td A V			&none	&none	&none	&kp RET
-							&kp SPC		&to AL1						&none	&none
+							&kp LCTL	&kp LALT	&kp LGUI		&kp Z	&kp N0		&kp BKSP
+				&kp LSHIFT  &td M I		&td P B		&td A V			&none	&none		&kp TAB	&kp RET
+							&kp SPC		&to AL1						&none	&kp RGUI
 			>;
 		};
 	};
