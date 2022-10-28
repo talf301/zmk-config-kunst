@@ -200,7 +200,7 @@
 			bindings = <
 									&kp ESC			&kp LC(LS(TAB))		&kp RC(TAB)			&td LG(V) LG(C)		&kp UP		&td Q BKSP
 				&td LG(GRAVE) TAB	&td HOME DEL	&td END LG(LBKT)	&kp LG(RBKT)		&td TAB LEFT		&kp DOWN	&td  LG(LS(N5)) RIGHT	&kp RET
-									&sr LSHIFT AL1		&kp LALT							&kp RGUI	&kp RALT
+									&sr LSHIFT AL1		&kp LALT							&none	&kp RGUI
 			>;
 		};
 
