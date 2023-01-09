@@ -29,7 +29,6 @@
 #define SYS 5
 #define BT 6	
 #define AL2U 7
-#define IMG 8
 / { 
 	combos {
 		compatible = "zmk,combos";
@@ -67,11 +66,26 @@
 			bindings = <&mkp RCLK>;
 			layers = <SYS>;
 		};
-		combo_img {
+		combo_bkspc {
 			timeout-ms = <30>;
-			key-positions = <0 1 2>;
-			bindings = <&to IMG>;
+			key-positions = <11 12>;
+			bindings = <&kp BKSP>;
 		};
+    		combo_enter {
+			timeout-ms = <30>;
+			key-positions = <4 5>;
+			bindings = <&kp RET>;
+   		 };
+ 	 	combo_tab {
+			timeout-ms = <30>;
+			key-positions = <0 1>;
+			bindings = <&kp TAB>;
+    		};
+    		combo_esc {
+			timeout-ms = <30>;
+			key-positions = <7 8>;
+			bindings = <&kp ESC>;
+	 	};
 
 	};
 
@@ -160,15 +174,15 @@
 			bindings = <
 								&hm_l LCTL L	&hm_l LALT G	&hm_l LGUI D		&hm_r RGUI H	&hm_r RALT U	&hm_r RCTL O	  
 				&hl_l NM1 I		&hl_l SM2 S		&hl_l SM1 R		&hl_l SYS T			&hl_r SYS N		&hl_r SM1 E		&hl_r SM2 A		&hl_r NM1 C
-								&mt LC(LS(LALT)) SPC	&key_repeat					&caps_alpha2macro	&alpha2macro
+								&mt LC(LS(LALT)) SPC	&key_repeat					&sk LSHIFT	&alpha2macro
 			>;
 		};
 
 		alpha2 {
 			bindings = <
-						&kp V	&kp W	&kp M		&kp F	&kp SQT		&kp Z
-				&kp Q	&kp J	&kp P	&kp K		&kp B	&kp DOT		&kp X	&kp Y 
-						&sk LSHIFT	&trans			&none	&sl AL2U	
+						&kp Q	&kp X	&kp V		&kp Y	&kp J		&kp P
+				&kp Z	&kp W	&kp B	&kp F		&kp M	&kp K		&kp COMMA	&kp DOT 
+						&caps_alpha2macro	&trans			&none	&sl AL2U	
 			>;
 		};
 
@@ -220,12 +234,5 @@
 			>;
 		};
 
-		img {
-			bindings = <
-							&kp LCTL	&kp LALT	&kp LGUI		&none	&none	&kp BKSP
-				&kp LSHIFT  &td M I		&td P B		&td A V			&none	&none	&none	&kp RET
-							&kp SPC		&to AL1						&none	&none
-			>;
-		};
 	};
 };
